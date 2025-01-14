@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(24, 24, 41);
+    color: whitesmoke;
+    border-bottom: 5px goldenrod solid;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1400px;
+    background-color: rgb(176, 176, 176);
+    margin: 0 auto;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+    height: 300px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    height: 300px;
+}
+
